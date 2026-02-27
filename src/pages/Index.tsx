@@ -2,7 +2,7 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const HERO_IMG = "https://cdn.poehali.dev/projects/9d27bf10-8561-40c5-9aaa-e0b324e341ac/files/8c29fcd8-46a2-4a1e-9b36-3d7b9e9ed4e6.jpg";
-const CHEF_IMG = "https://cdn.poehali.dev/projects/9d27bf10-8561-40c5-9aaa-e0b324e341ac/files/39d76072-04e6-479c-bb47-6bfe62472f41.jpg";
+const CHEF_IMG = "https://cdn.poehali.dev/projects/9d27bf10-8561-40c5-9aaa-e0b324e341ac/bucket/7d469868-998b-43c7-bf14-9ace47603914.png";
 const PASTA_IMG = "https://cdn.poehali.dev/projects/9d27bf10-8561-40c5-9aaa-e0b324e341ac/files/ce578270-869e-476d-b5da-be8580bebefe.jpg";
 
 const navLinks = [
@@ -93,16 +93,16 @@ export default function Index() {
               <span style={{ fontFamily: "'Cormorant', serif", fontStyle: "italic", color: "var(--stone-dark)" }}>Салабуга</span>
             </h2>
             <div className="divider-gold" style={{ width: "3rem", marginBottom: "2rem" }} />
-            <p style={{ color: "var(--stone-dark)", fontSize: "0.9rem", lineHeight: 1.85, marginBottom: "1.2rem" }}>
+            <p style={{ color: "var(--stone-dark)", fontSize: "1rem", lineHeight: 1.85, marginBottom: "1.2rem" }}>
               Шестнадцать лет в Италии сформировали в Максиме убеждение, которое стало основой Varvara: великое блюдо не нуждается в обилии. Оно нуждается в честности.
             </p>
-            <p style={{ color: "var(--stone-dark)", fontSize: "0.9rem", lineHeight: 1.85, marginBottom: "1.2rem" }}>
+            <p style={{ color: "var(--stone-dark)", fontSize: "1rem", lineHeight: 1.85, marginBottom: "1.2rem" }}>
               Работая на кухнях Флоренции, Болоньи и Альбы, он изучил технику приготовления пасты как медитативный ритуал — каждое движение, каждый грамм муки, каждая секунда имеют значение.
             </p>
             <p style={{ fontFamily: "'Cormorant', serif", fontStyle: "italic", color: "var(--charcoal)", fontSize: "1.1rem", lineHeight: 1.7 }}>
               «Varvara — это имя, которое звучит как поэзия. Именно так должна звучать настоящая итальянская кухня.»
             </p>
-            <p style={{ marginTop: "1rem", fontSize: "0.62rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--gold)" }}>— Максим Салабуга</p>
+            <p style={{ marginTop: "1rem", fontSize: "0.72rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--gold)" }}>— Максим Салабуга</p>
           </div>
         </div>
 
@@ -115,7 +115,7 @@ export default function Index() {
             <div key={item.num} className="border-t pt-8" style={{ borderColor: "var(--stone)" }}>
               <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", color: "var(--stone)", fontWeight: 300, marginBottom: "1rem" }}>{item.num}</p>
               <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 400, color: "var(--charcoal)", marginBottom: "0.75rem" }}>{item.title}</h3>
-              <p style={{ color: "var(--stone-dark)", fontSize: "0.85rem", lineHeight: 1.8 }}>{item.text}</p>
+              <p style={{ color: "var(--stone-dark)", fontSize: "0.95rem", lineHeight: 1.8 }}>{item.text}</p>
             </div>
           ))}
         </div>
@@ -150,8 +150,8 @@ export default function Index() {
                   { step: "IV", text: "Пять минут тишины — только аромат и предвкушение" },
                 ].map((s) => (
                   <div key={s.step} className="flex gap-4 items-start">
-                    <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "0.85rem", color: "var(--gold)", minWidth: "1.5rem" }}>{s.step}</span>
-                    <p style={{ color: "rgba(247,243,237,0.65)", fontSize: "0.82rem", lineHeight: 1.75 }}>{s.text}</p>
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "0.95rem", color: "var(--gold)", minWidth: "1.5rem" }}>{s.step}</span>
+                    <p style={{ color: "rgba(247,243,237,0.65)", fontSize: "0.92rem", lineHeight: 1.75 }}>{s.text}</p>
                   </div>
                 ))}
               </div>
@@ -171,7 +171,7 @@ export default function Index() {
               { label: "Масло", value: "Extra virgin, холодный отжим" },
             ].map((i) => (
               <div key={i.label} className="border-t pt-6" style={{ borderColor: "var(--stone)" }}>
-                <p style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone-dark)", marginBottom: "0.5rem" }}>{i.label}</p>
+                <p style={{ fontSize: "0.72rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone-dark)", marginBottom: "0.5rem" }}>{i.label}</p>
                 <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem", color: "var(--charcoal)", fontWeight: 400 }}>{i.value}</p>
               </div>
             ))}
@@ -197,7 +197,7 @@ export default function Index() {
           <p style={{ fontFamily: "'Cormorant', serif", fontStyle: "italic", fontSize: "1.35rem", color: "var(--charcoal)", maxWidth: "520px", margin: "2.5rem auto 0", lineHeight: 1.7 }}>
             «Каждый гость здесь — немного Варвара. Каждая тарелка — немного любовное письмо.»
           </p>
-          <p style={{ marginTop: "1rem", fontSize: "0.62rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--gold)" }}>— Максим Салабуга</p>
+          <p style={{ marginTop: "1rem", fontSize: "0.72rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--gold)" }}>— Максим Салабуга</p>
         </div>
       </section>
 
@@ -209,7 +209,7 @@ export default function Index() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 300, color: "#fff" }}>
               Забронировать столик
             </h2>
-            <p style={{ marginTop: "1rem", color: "rgba(247,243,237,0.45)", fontSize: "0.75rem", letterSpacing: "0.12em" }}>
+            <p style={{ marginTop: "1rem", color: "rgba(247,243,237,0.45)", fontSize: "0.85rem", letterSpacing: "0.12em" }}>
               Открыто ежедневно, кроме воскресенья · 12:00 — 13:00
             </p>
           </div>
@@ -220,7 +220,7 @@ export default function Index() {
               <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 300, color: "#fff", marginBottom: "0.75rem" }}>
                 Grazie
               </p>
-              <p style={{ color: "rgba(247,243,237,0.55)", fontSize: "0.85rem" }}>
+              <p style={{ color: "rgba(247,243,237,0.55)", fontSize: "0.95rem" }}>
                 Ваша заявка принята. Мы свяжемся с вами для подтверждения.
               </p>
             </div>
@@ -228,13 +228,13 @@ export default function Index() {
             <form onSubmit={handleSubmit} className="space-y-10">
               <div className="grid md:grid-cols-2 gap-10">
                 <div>
-                  <label style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Имя</label>
+                  <label style={{ fontSize: "0.72rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Имя</label>
                   <input className="varvara-input" style={{ color: "var(--cream)", borderBottomColor: "rgba(200,187,168,0.35)" }}
                     placeholder="Ваше имя"
                     value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} required />
                 </div>
                 <div>
-                  <label style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Телефон</label>
+                  <label style={{ fontSize: "0.72rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Телефон</label>
                   <input className="varvara-input" style={{ color: "var(--cream)", borderBottomColor: "rgba(200,187,168,0.35)" }}
                     placeholder="+7 (999) 000-00-00"
                     value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} required />
@@ -242,17 +242,17 @@ export default function Index() {
               </div>
               <div className="grid md:grid-cols-3 gap-10">
                 <div>
-                  <label style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Дата</label>
+                  <label style={{ fontSize: "0.72rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Дата</label>
                   <input type="date" className="varvara-input" style={{ color: "var(--cream)", borderBottomColor: "rgba(200,187,168,0.35)" }}
                     value={form.date} onChange={e => setForm({ ...form, date: e.target.value })} required />
                 </div>
                 <div>
-                  <label style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Время</label>
+                  <label style={{ fontSize: "0.72rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Время</label>
                   <input className="varvara-input" style={{ color: "var(--cream)", borderBottomColor: "rgba(200,187,168,0.35)" }}
                     placeholder="12:00" value={form.time} onChange={e => setForm({ ...form, time: e.target.value })} required />
                 </div>
                 <div>
-                  <label style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Гостей</label>
+                  <label style={{ fontSize: "0.72rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--stone)", display: "block", marginBottom: "0.75rem" }}>Гостей</label>
                   <input type="number" min="1" max="8" className="varvara-input" style={{ color: "var(--cream)", borderBottomColor: "rgba(200,187,168,0.35)" }}
                     placeholder="2" value={form.guests} onChange={e => setForm({ ...form, guests: e.target.value })} required />
                 </div>
@@ -278,12 +278,12 @@ export default function Index() {
               <p className="section-eyebrow">Contatti</p>
               <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 300, color: "var(--charcoal)", marginBottom: "1.2rem" }}>Контакты</h3>
               <div className="space-y-4">
-                <a href="tel:+79315338586" className="flex items-center gap-3" style={{ color: "var(--stone-dark)", fontSize: "0.85rem", textDecoration: "none" }}>
+                <a href="tel:+79315338586" className="flex items-center gap-3" style={{ color: "var(--stone-dark)", fontSize: "0.95rem", textDecoration: "none" }}>
                   <Icon name="Phone" size={13} />
                   <span>+7 931 533 8586</span>
                 </a>
                 <a href="https://t.me/ZCIV5" target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-3" style={{ color: "var(--stone-dark)", fontSize: "0.85rem", textDecoration: "none" }}>
+                  className="flex items-center gap-3" style={{ color: "var(--stone-dark)", fontSize: "0.95rem", textDecoration: "none" }}>
                   <Icon name="Send" size={13} />
                   <span>@ZCIV5</span>
                 </a>
@@ -294,22 +294,22 @@ export default function Index() {
               <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 300, color: "var(--charcoal)", marginBottom: "1.2rem" }}>Часы работы</h3>
               <div className="space-y-3">
                 <div className="flex justify-between">
-                  <span style={{ color: "var(--stone-dark)", fontSize: "0.82rem" }}>Пн — Сб</span>
-                  <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "0.9rem", color: "var(--charcoal)" }}>12:00 — 13:00</span>
+                  <span style={{ color: "var(--stone-dark)", fontSize: "0.92rem" }}>Пн — Сб</span>
+                  <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem", color: "var(--charcoal)" }}>12:00 — 13:00</span>
                 </div>
                 <div className="flex justify-between">
-                  <span style={{ color: "var(--stone-dark)", fontSize: "0.82rem" }}>Воскресенье</span>
-                  <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "0.9rem", color: "var(--stone-dark)" }}>Закрыто</span>
+                  <span style={{ color: "var(--stone-dark)", fontSize: "0.92rem" }}>Воскресенье</span>
+                  <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem", color: "var(--stone-dark)" }}>Закрыто</span>
                 </div>
               </div>
-              <p style={{ marginTop: "1rem", fontSize: "0.75rem", fontStyle: "italic", color: "var(--stone-dark)", opacity: 0.7 }}>
+              <p style={{ marginTop: "1rem", fontSize: "0.85rem", fontStyle: "italic", color: "var(--stone-dark)", opacity: 0.7 }}>
                 Только по предварительному бронированию
               </p>
             </div>
             <div>
               <p className="section-eyebrow">Indirizzo</p>
               <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 300, color: "var(--charcoal)", marginBottom: "1.2rem" }}>Адрес</h3>
-              <p style={{ color: "var(--stone-dark)", fontSize: "0.85rem", lineHeight: 1.8 }}>
+              <p style={{ color: "var(--stone-dark)", fontSize: "0.95rem", lineHeight: 1.8 }}>
                 Москва<br />
                 <span style={{ fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--stone)" }}>Подвал шэфа Салабуги</span>
               </p>
@@ -321,9 +321,9 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="py-12 text-center" style={{ background: "var(--charcoal)" }}>
         <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", letterSpacing: "0.3em", color: "var(--cream)", marginBottom: "0.5rem" }}>Varvara</p>
-        <p style={{ fontFamily: "'Cormorant', serif", fontStyle: "italic", color: "rgba(247,243,237,0.3)", fontSize: "0.85rem" }}>Un piatto. Una perfezione.</p>
+        <p style={{ fontFamily: "'Cormorant', serif", fontStyle: "italic", color: "rgba(247,243,237,0.3)", fontSize: "0.95rem" }}>Un piatto. Una perfezione.</p>
         <div className="divider-gold w-16 mx-auto my-6" style={{ opacity: 0.3 }} />
-        <p style={{ color: "rgba(247,243,237,0.2)", fontSize: "0.6rem", letterSpacing: "0.18em" }}>
+        <p style={{ color: "rgba(247,243,237,0.2)", fontSize: "0.72rem", letterSpacing: "0.18em" }}>
           © 2026 VARVARA RISTORANTE · МАКСИМ САЛАБУГА
         </p>
       </footer>
