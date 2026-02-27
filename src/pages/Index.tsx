@@ -8,7 +8,7 @@ const PASTA_IMG = "https://cdn.poehali.dev/projects/9d27bf10-8561-40c5-9aaa-e0b3
 const navLinks = [
   { label: "История", href: "#storia" },
   { label: "Блюдо", href: "#piatto" },
-  { label: "Интерьер", href: "#interno" },
+  { label: "Варвара", href: "#interno" },
   { label: "Бронирование", href: "#prenotazione" },
   { label: "Контакты", href: "#contatti" },
 ];
@@ -179,39 +179,25 @@ export default function Index() {
         </div>
       </section>
 
-      {/* INTERNO */}
+      {/* VARVARA — the name */}
       <section id="interno" className="py-32" style={{ background: "var(--cream)" }}>
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-              <p className="section-eyebrow">L'Interno</p>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem, 4vw, 3.2rem)", fontWeight: 300, color: "var(--charcoal)", lineHeight: 1.1, marginBottom: "1.5rem" }}>
-                Пространство<br />
-                <span style={{ fontFamily: "'Cormorant', serif", fontStyle: "italic", color: "var(--stone-dark)" }}>для одного блюда</span>
-              </h2>
-              <div className="divider-gold" style={{ width: "3rem", marginBottom: "2rem" }} />
-              <p style={{ color: "var(--stone-dark)", fontSize: "0.9rem", lineHeight: 1.85, marginBottom: "1.2rem" }}>
-                Двенадцать столиков. Мрамор каррара, обожжённое дерево, льняные скатерти. Каждый элемент выбран так, чтобы не отвлекать — только усиливать переживание.
-              </p>
-              <p style={{ color: "var(--stone-dark)", fontSize: "0.9rem", lineHeight: 1.85 }}>
-                Открытая кухня занимает центр зала. Гости наблюдают за приготовлением своей пасты как за театральным действием — в полной тишине фонового шума нет.
-              </p>
-            </div>
-            <div className="space-y-0">
-              {[
-                { label: "Вместимость", value: "12 столиков, 24 гостя" },
-                { label: "Освещение", value: "Свечи и направленный тёплый свет" },
-                { label: "Материалы", value: "Мрамор, необработанный дуб, лён" },
-                { label: "Звук", value: "Тишина, лёгкий итальянский джаз" },
-                { label: "Дресс-код", value: "Smart casual, деловой" },
-              ].map((item) => (
-                <div key={item.label} className="flex justify-between py-5 border-b" style={{ borderColor: "var(--cream-dark)" }}>
-                  <span style={{ fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--stone-dark)" }}>{item.label}</span>
-                  <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "0.95rem", color: "var(--charcoal)", fontWeight: 400 }}>{item.value}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <p className="section-eyebrow">Il Nome</p>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.5rem, 6vw, 4.5rem)", fontWeight: 300, color: "var(--charcoal)", lineHeight: 1.05, marginBottom: "2rem" }}>
+            Varvara — это не концепция.<br />
+            <span style={{ fontFamily: "'Cormorant', serif", fontStyle: "italic", color: "var(--stone-dark)" }}>Это человек.</span>
+          </h2>
+          <div className="divider-gold w-16 mx-auto" style={{ marginBottom: "2.5rem" }} />
+          <p style={{ color: "var(--stone-dark)", fontSize: "1rem", lineHeight: 2, maxWidth: "640px", margin: "0 auto 1.5rem" }}>
+            Максим назвал ресторан в честь своей любимой. Варвара — женщина, ради которой он вернулся из Италии. Женщина, чей смех он слышал, когда придумывал это место.
+          </p>
+          <p style={{ color: "var(--stone-dark)", fontSize: "1rem", lineHeight: 2, maxWidth: "640px", margin: "0 auto 1.5rem" }}>
+            Здесь нет концепции ради концепции. Есть только желание накормить человека, которого любишь, — самым честным и нежным блюдом, которое умеешь готовить.
+          </p>
+          <p style={{ fontFamily: "'Cormorant', serif", fontStyle: "italic", fontSize: "1.35rem", color: "var(--charcoal)", maxWidth: "520px", margin: "2.5rem auto 0", lineHeight: 1.7 }}>
+            «Каждый гость здесь — немного Варвара. Каждая тарелка — немного любовное письмо.»
+          </p>
+          <p style={{ marginTop: "1rem", fontSize: "0.62rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--gold)" }}>— Максим Салабуга</p>
         </div>
       </section>
 
