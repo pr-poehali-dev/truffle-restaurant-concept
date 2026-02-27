@@ -325,7 +325,7 @@ export default function Index() {
               <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 300, color: "var(--charcoal)", marginBottom: "1.2rem" }}>Адрес</h3>
               <p style={{ color: "var(--stone-dark)", fontSize: "0.85rem", lineHeight: 1.8 }}>
                 Москва<br />
-                <span style={{ fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--stone)" }}>адрес уточняется при бронировании</span>
+                <span style={{ fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--stone)" }}>Подвал шэфа Салабуги</span>
               </p>
             </div>
           </div>
